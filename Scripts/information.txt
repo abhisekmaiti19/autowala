@@ -1,0 +1,16 @@
+====> Finding elements in a webpage (By class) <=====
+
+from selenium.webdriver.common.by import By
+
+driver.find_element_by_Xpath('')
+driver.find_element(By.XPATH,'//')
+driver.find_elements(By.XPATH,'//')
+
+     By.ID
+     By.XPATH
+     By.LINK_TEXT
+     By.PARTIAL_LINK_TEXT
+     By.NAME
+     By.TAG_NAME
+     By.CLASS_NAME
+     By.CSS_SELECTOR
