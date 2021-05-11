@@ -14,3 +14,19 @@ driver.find_elements(By.XPATH,'//')
      By.TAG_NAME
      By.CLASS_NAME
      By.CSS_SELECTOR
+
+========> Implicit Waits <=================
+
+An implicit wait WebDriver to Poll the DOM a certain amount of time when trying to find any element not immidietly available . The default setting is 0.Once set, the implicit wait is set for the life of the webdriver object.
+
+
+~~~~~~~~~Set-Up~~~~~~~~~~~~
+
+	from selenium import webdriver
+	driver = webdriver.chrome("../chromedriver.exe")
+	driver.implicitly_wait(5) # seconds
+	driver.get("https://seleniumframework.com/Practiceform/")
+
+	#time.sleep(5)
+
+	element = driver.find_element_by_id("periodicElement")
