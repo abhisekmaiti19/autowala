@@ -16,3 +16,12 @@ driver.find_element(By.XPATH,"/html/body/div[2]/div/div[2]/div[2]/div[2]/form/bu
 
 
 driver.quit()
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome("../chromedriver.exe")
+
+driver.get("https://www.codediksha.com/post/free-udemy-courses-limited-time-offer")
+for()
+driver.refresh("https://www.codediksha.com/post/free-udemy-courses-limited-time-offer")
